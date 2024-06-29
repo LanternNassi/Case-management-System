@@ -1,0 +1,30 @@
+.topLayout1{
+    top : 0vh;
+    position: sticky;
+    width : 100vw;
+    height : 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: white;
+
+
+}
+
+.heading{
+    width : 30vw;
+    height : 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pages{
+    width : 60vw;
+    height : 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+

@@ -1,0 +1,56 @@
+.root{
+    display: flex; /* Make the container a flexbox */
+    min-height: 100vh; /* Set minimum height to viewport height */
+    width: 100vw; /* Set width to 100% viewport width */
+    flex-direction: column;
+}
+
+.header{
+    width : 100vw;
+    position: relative;
+    height : 100vh;
+    background-image: url('../../../assets/background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+}
+
+.phrase{
+    position: relative;
+    min-height: 30vh;
+    width:30vw;
+    top : 10vh;
+    left : 2vw;
+
+}
+
+.phrase1{
+    height: 10vh;
+    width : 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.phrase2{
+    height: 20vh;
+    width : 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phrase2Button{
+    height: 20vh;
+    width : 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutUSButton{
+    height : 9vh;
+    width : 20vw;
+}
