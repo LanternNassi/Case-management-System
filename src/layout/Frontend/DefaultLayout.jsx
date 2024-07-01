@@ -3,42 +3,27 @@ import "./DefaultLayout.css";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import { Pages } from "../../Constants/Pages";
+import { useTheme } from "@mui/material/styles";
+import { NavLink } from "react-router-dom";
 
-export default function DefaultLayout() {
-  const pages = [
-    {
-      name: "Home",
-    },
-    {
-      name: "About Us",
-    },
-    {
-      name: "Contact Us",
-    },
-    {
-      name: "FAQ",
-    },
-    {
-      name: "Privacy Policy",
-    },
-    {
-      name: "Services",
-    },
-    
-  ];
+export default function DefaultLayout({activePage}) {
+  const theme = useTheme();
+  const primaryColor = theme.palette.primary.main;
+  const secondaryColor = theme.palette.secondary.main;
 
   return (
-    <div className="topLayout1">
+    <div style = {{background : (activePage == 'Home') ? ('transparent') : (primaryColor) }} className="topLayout1">
       <div className="heading">
         <Typography variant="h5">CASE Management System</Typography>
       </div>
       <div className="pages">
-        {pages.map((section) => (
-          <a>
-            <Typography variant="overline" display="block">
+        {Pages.map((section) => (
+          <NavLink to = {section.link} style={{ textDecoration: "none", color: "inherit" }}>
+            <Typography sx = {{color : (activePage == section.name) ? secondaryColor : "white"}} variant="overline" display="block">
               {section.name}
             </Typography>
-          </a>
+          </NavLink>
         ))}
         <Button
           variant="outlined"

@@ -25,6 +25,8 @@ import StepLabel from "@mui/material/StepLabel";
 import StepContent from "@mui/material/StepContent";
 import Paper from "@mui/material/Paper";
 
+import DefaultFooter from "../../../layout/Frontend/DefaultFooter";
+
 export default function Index() {
   const [expanded, setExpanded] = React.useState(false);
   const [activeStep, setActiveStep] = React.useState(3);
@@ -106,8 +108,8 @@ export default function Index() {
   return (
     <div className="root">
       <div className="header">
-        <DefaultLayout />
-        <div className="phrase">
+        <DefaultLayout activePage={'Home'}/>
+        {/* <div className="phrase">
           <div className="phrase1">
             <Typography sx={{ color: "#C0DFA1" }} variant="h3">
               C.M.S
@@ -130,7 +132,7 @@ export default function Index() {
               ABOUT US
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="services">
@@ -307,6 +309,10 @@ export default function Index() {
         </div>
         <div className="systemLight" />
       </div>
+
+      <Box sx={{ height: "10vh", width: "100vw" }} />
+
+      <DefaultFooter/>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+
+.footroot{
+    height : 50vh;
+    width : 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SpotLight{
+    height : 40vh;
+    width : 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footlinks{
+    height : 15vh;
+    width : 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color : white
+}
