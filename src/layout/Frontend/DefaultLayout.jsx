@@ -25,6 +25,7 @@ export default function DefaultLayout({activePage}) {
             </Typography>
           </NavLink>
         ))}
+        <NavLink to = {"/Login"} style={{ textDecoration: "none", color: "inherit" }}>
         <Button
           variant="outlined"
           sx={{ color: "white" }}
@@ -32,6 +33,8 @@ export default function DefaultLayout({activePage}) {
         >
           LOGIN
         </Button>
+        </NavLink>
+
       </div>
     </div>
   );
