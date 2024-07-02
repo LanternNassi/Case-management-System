@@ -9,6 +9,7 @@ import Contact from './Pages/Frontend/Contact/Contact'
 import FAQ from './Pages/Frontend/FAQ/FAQ'
 import Login from './Pages/Backend/Auth/Login'
 import Services from './Pages/Frontend/Services/Services'
+import Policy from './Pages/Frontend/PrivacyPolicy/Policy'
 
 import { Route, Routes, Navigate } from "react-router-dom";
 
@@ -24,6 +25,7 @@ function App() {
       <Route path="/FAQ" element={<FAQ/>} />
       <Route path="/Login" element={<Login/>} />
       <Route path="/Services" element={<Services/>} />
+      <Route path="/Policy" element={<Policy/>} />
 
     </Routes>
       
