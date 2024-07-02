@@ -47,7 +47,7 @@ export default function Services() {
           ))}
         </div>
       </div>
-      <DefaultFooter />
+      <DefaultFooter activePage={"Services"}/>
     </div>
   );
 }

@@ -285,7 +285,7 @@ export default function Index() {
 
       <Box sx={{ height: "10vh", width: "100vw" }} />
 
-      <DefaultFooter/>
+      <DefaultFooter activePage={'Home'}/>
     </div>
   );
 }

@@ -5,10 +5,15 @@ import Typography from "@mui/material/Typography";
 import { Pages } from "../../Constants/Pages";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
+import { NavLink } from "react-router-dom";
+import Button from "@mui/material/Button";
 
-export default function DefaultFooter() {
+export default function DefaultFooter({activePage}) {
   const theme = useTheme();
   const primaryColor = theme.palette.primary.main;
+  const secondaryColor = theme.palette.secondary.main;
+
+
   return (
     <div style={{ backgroundColor: primaryColor }} className="footroot">
       <div className="SpotLight">
@@ -22,20 +27,21 @@ export default function DefaultFooter() {
 
         <div className="footlinks">
           {Pages.map((page) => (
-            <a>
-              <Typography variant="overline" display="block">
+            <NavLink
+              to={page.link}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <Typography sx = {{color : (activePage == page.name) ? secondaryColor : "white"}} variant="overline" display="block">
                 {page.name}
               </Typography>
-            </a>
+            </NavLink>
           ))}
         </div>
 
-        <Typography sx ={{color : 'white'}} variant="h6">
-           @ CopyRight 2024
+        <Typography sx={{ color: "white" }} variant="h6">
+          @ CopyRight 2024
         </Typography>
       </div>
-
-      
     </div>
   );
 }

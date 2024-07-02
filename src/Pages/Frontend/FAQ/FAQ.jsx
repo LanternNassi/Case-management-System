@@ -76,7 +76,7 @@ export default function FAQ() {
         </div>
       </div>
 
-      <DefaultFooter />
+      <DefaultFooter activePage={"FAQ"} />
     </div>
   );
 }

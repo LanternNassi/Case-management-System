@@ -52,7 +52,7 @@ export default function About() {
           </Button>
         </div>
       </div>
-      <DefaultFooter/>
+      <DefaultFooter activePage = {'About Us'}/>
     </div>
   );
 }

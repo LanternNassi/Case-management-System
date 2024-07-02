@@ -68,7 +68,7 @@ export default function Contact() {
         <div className="ContactPic"></div>
       </div>
 
-      <DefaultFooter />
+      <DefaultFooter activePage={"Contact Us"}/>
     </div>
   );
 }
