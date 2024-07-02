@@ -10,7 +10,8 @@ export const PrimaryTheme = createTheme({
     },
     background: {
       paper : "#E9EAEE",
-      default : "#E9EAEE"
+      default : "#E9EAEE",
+      
     },
     action: {
       active: "#590925",
@@ -20,6 +21,10 @@ export const PrimaryTheme = createTheme({
       selected: "#590925",
 
     }
+  },
+  typography: {
+    fontFamily: 'Figtree, sans-serif',
+    fontSize: 15,
   },
 
 });
