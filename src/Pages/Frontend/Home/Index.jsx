@@ -24,7 +24,7 @@ import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import StepContent from "@mui/material/StepContent";
 import Paper from "@mui/material/Paper";
-
+import { services } from "../../../Constants/Services";
 import DefaultFooter from "../../../layout/Frontend/DefaultFooter";
 
 export default function Index() {
@@ -39,51 +39,25 @@ export default function Index() {
     setExpanded(isExpanded ? panel : false);
   };
 
-  const services = [
-    {
-      name: "Case information Storage",
-      description:
-        "This service is meant to allow insertion and retrieval of court case information such as Case description , Proof , etc.",
-      icon: <StorageIcon />,
-    },
-    {
-      name: "Case Scheduling",
-      description:
-        "This service is meant to allocate court sittings or hearings based on the available case information depending on factors such as date reported.",
-      icon: <ScheduleIcon />,
-    },
-    {
-      name: "Case Priotization",
-      description:
-        "This function prioritizes cases based on factors such as the time needed to gather evidence and the number of sittings needed.",
-      icon: <PriorityHighIcon />,
-    },
-    {
-      name: "Case Tracking",
-      description:
-        "This feature is based off the availability of the different schedules and case information. ",
-      icon: <LocationSearchingIcon />,
-    },
-  ];
-
+  
   const FAQS = [
     {
       panel: "panel1",
       category: "Users",
-      question: "What are the target users for this system",
+      question: "What are the target users for this system ?",
       answer: "Judges",
     },
     {
       panel: "panel2",
       category: "System",
-      question: "What are the target users for this system",
-      answer: "Judges",
+      question: "What are some of the services offered by the system ?",
+      answer: "Priotization , Scheduling ",
     },
     {
       panel: "panel3",
       category: "Judicial",
-      question: "What are the target users for this system",
-      answer: "Judges",
+      question: "Under which court should this system be used ?",
+      answer: "High court",
     },
   ];
 
@@ -164,7 +138,7 @@ export default function Index() {
           <div className="listServices">
             {services.map((service) => (
               <div className="Service">
-                <div className="ServiceIcon">{service.icon}</div>
+                <div className="ServiceIcon">{<service.icon/>}</div>
                 <div className="ServiceWords">
                   <Box
                     sx={{
@@ -250,8 +224,7 @@ export default function Index() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                  feugiat. Aliquam eget maximus est, id dignissim quam.
+                  {FAQ.answer}
                 </Typography>
               </AccordionDetails>
             </Accordion>
