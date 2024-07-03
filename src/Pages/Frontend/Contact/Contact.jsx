@@ -20,7 +20,7 @@ export default function Contact() {
   const VITE_TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const VITE_USER_ID = import.meta.env.VITE_USER_ID;
 
-  console.log(VITE_SERVICE_ID)
+  console.log(VITE_USER_ID)
 
   function sendEmail(e) {
     e.preventDefault();    
