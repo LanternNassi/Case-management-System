@@ -13,6 +13,15 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+ARG VITE_SERVICE_ID
+ARG VITE_TEMPLATE_ID
+ARG VITE_USER_ID
+
+RUN echo "VITE_SERVICE_ID=${VITE_SERVICE_ID}" >> .env
+RUN echo "VITE_TEMPLATE_ID=${VITE_TEMPLATE_ID}" >> .env
+RUN echo "VITE_USER_ID=${VITE_USER_ID}" >> .env
+
+
 # Build the Vite app
 RUN npm run build
 
