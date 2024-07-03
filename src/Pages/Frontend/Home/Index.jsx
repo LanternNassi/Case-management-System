@@ -178,7 +178,7 @@ export default function Index() {
             A well-designed Case Information Management System (CIMS)
             strengthening judicial fairness by automating processes, reducing
             bias, and ensuring transparency. Through data centralization,
-            automated scheduling, and real-time updates, a CIMS promotes
+            automated scheduling, and real-time updates, our CIMS promotes
             impartial treatment and trust in the legal system.
           </Typography>
 
