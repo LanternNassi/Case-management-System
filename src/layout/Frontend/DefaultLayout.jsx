@@ -25,7 +25,8 @@ export default function DefaultLayout({activePage}) {
             </Typography>
           </NavLink>
         ))}
-        <NavLink to = {"/Login"} style={{ textDecoration: "none", color: "inherit" }}>
+        {/* <NavLink to = {"/Login"} style={{ textDecoration: "none", color: "inherit" }}> */}
+        <a href="https://apex.oracle.com/pls/apex/r/cms__2/case-management-system61889/login" target="_blank" rel="noopener noreferrer">
         <Button
           variant="outlined"
           sx={{ color: "white" }}
@@ -33,7 +34,8 @@ export default function DefaultLayout({activePage}) {
         >
           LOGIN
         </Button>
-        </NavLink>
+        </a>
+        {/* </NavLink> */}
 
       </div>
     </div>
