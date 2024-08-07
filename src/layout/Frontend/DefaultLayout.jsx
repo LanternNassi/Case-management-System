@@ -15,7 +15,7 @@ export default function DefaultLayout({activePage}) {
   return (
     <div style = {{background : (activePage == 'Home') ? ('transparent') : (primaryColor) }} className="topLayout1">
       <div className="heading">
-        <Typography variant="h5">CASE Management System</Typography>
+        <Typography variant="h5">CASE Management Systems</Typography>
       </div>
       <div className="pages">
         {Pages.map((section) => (
