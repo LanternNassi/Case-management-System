@@ -23,9 +23,5 @@ export const Pages = [
         link : '/Policy'
 
       },
-      {
-        name: "Services",
-        link : '/Services'
-      },
 
 ]
